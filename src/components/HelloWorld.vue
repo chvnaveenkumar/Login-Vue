@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     submit(){
-      axios.post('http://localhost:3000/login/user',this.formdata).then((res) =>{
+      axios.post('http://localhost:3000/user/login',this.formdata).then((res) =>{
         window.localStorage.setItem("token",res.data);
         this.$router.push("/Details")
       });

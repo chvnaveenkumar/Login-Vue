@@ -1,6 +1,7 @@
 <template>
 <div>
-   <input type="text" v-model="sname">
+   <p>Add My student details</p>
+   <input type="text" hint="Enter Name" v-model="sname">
    <button class="submit" @click="submit">Submit</button> 
 </div>
 </template>
